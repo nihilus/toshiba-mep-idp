@@ -1,4 +1,4 @@
-# Toshiba MeP for IDA Pro 6.x
+# Toshiba MeP for IDA Pro 7.x
 
 This is a processor module for MeP mostly generated from 
 [CGEN](https://github.com/yifanlu/cgen).
@@ -22,6 +22,8 @@ instruction sets will be akin to ARM/Thumb support)
 Create a directory `mep` in `$IDASDK/module` with the files here. Then edit 
 `$IDASDK/module/makefile` and add `mep` to `DIRS32`. Then follow the SDK's 
 build instructions for your platform.
+
+For Windows, make sure you have VS2015 installed and your IDA SDK installed to `C:\IDASDK`. You can then use the VS project file.
 
 To regenerate the CGEN files, modify `generate.sh` to point to your CGEN path 
 and run it. Note that modifications have been made to the generated files 
